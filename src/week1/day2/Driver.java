@@ -1,10 +1,12 @@
-package week1_24_28;
+package week1.day2;
 
 import java.util.Random;
 
-public class Tuesday_25_hw {
+public class Driver {
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+
 		int sum = sumOfArgs(args);
 		System.out.println("Sum: " + sum);
 		
@@ -21,9 +23,8 @@ public class Tuesday_25_hw {
 		Rectangle newRectangle = new Rectangle();
 		newRectangle.calculateArea();
 		newRectangle.display();
-		
-		
 	}
+
 	public static int sumOfArgs(String[] args) {
 		int sum = 0;
 		for(int i = 0; i < args.length; i ++) {
@@ -62,58 +63,3 @@ public class Tuesday_25_hw {
 }
 
 
-interface Shape{
-    void calculateArea();
-    void display();
-}
-class Circle implements Shape{
-	private double radius = 5;
-
-	@Override
-	public void calculateArea() {
-		System.out.println(radius * radius * 3.14);
-	}
-	@Override
-	public void display() {
-		System.out.println("  *  ");
-		System.out.println(" ***  ");
-		System.out.println("****** ");
-		System.out.println(" ***  ");
-		System.out.println("  *  ");
-	}
-}
-class Triangle implements Shape{
-	private int base = 5;
-	private int height = 5;
-	@Override
-	public void calculateArea() {
-		System.out.println(base * height /2);
-	}
-	@Override
-	public void display() {
-		System.out.println("*");
-		System.out.println("**");
-		System.out.println("****");
-		System.out.println("*****");
-
-	}
-}
-class Rectangle implements Shape{
-	private int base = 5;
-	private int height = 5;
-
-	@Override
-	public void calculateArea() {
-		System.out.println(base * height );
-
-	}
-	@Override
-	public void display() {
-		System.out.println("*****");
-		System.out.println("*****");
-		System.out.println("*****");
-		System.out.println("*****");
-		System.out.println("*****");
-
-	}
-}

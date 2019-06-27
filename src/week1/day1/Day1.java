@@ -1,8 +1,8 @@
-package week1_24_28;
+package week1.day1;
 
 import java.util.Scanner;
 
-public class Monday_24_hw {
+public class Day1 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
