@@ -4,6 +4,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
+
 class LineTest {
 
 	@Test
@@ -35,7 +36,8 @@ class LineTest {
 	@Test
 	public void basicTest2GetDistance() {
 		Line newLine = new Line(1,2,3,4);
-		assertEquals(newLine.getDistance(),2.8284271247461903);
+		assertTrue(Math.abs(newLine.getDistance() - 2.8284271247461903 ) < 0.0001);
+		//assertEquals(newLine.getDistance(),2.8284271247461903);
 
 	}	
 	
@@ -43,26 +45,30 @@ class LineTest {
 	@Test
 	public void basicTest3GetDistance() {
 		Line newLine = new Line(2,3,5,0);
-		assertEquals(newLine.getDistance(),4.242640687119285);
+		assertTrue(Math.abs(newLine.getDistance() - 4.242640687119285 ) < 0.0001);
+
 
 	}	
 	
 	@Test
 	public void basicTest1GetSlope() {
 		Line newLine = new Line(5,8,9,0);
-		assertEquals(newLine.getSlope(),-2);
+		assertTrue(Math.abs(newLine.getSlope() - (-2) ) < 0.0001);
+
 
 	}
 	@Test
 	public void basicTest2GetSlope() {
 		Line newLine = new Line(2,3,5,0);
-		assertEquals(newLine.getSlope(),-1);
+		assertTrue(Math.abs(newLine.getSlope() - (-1) ) < 0.0001);
+
 
 	}
 	@Test
 	public void basicTest3GetSlope() {
 		Line newLine = new Line(1,2,3,4);
-		assertEquals(newLine.getSlope(),1);
+		assertTrue(Math.abs(newLine.getSlope()- 1 ) < 0.0001);
+
 
 	}
 	@Test
